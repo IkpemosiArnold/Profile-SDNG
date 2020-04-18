@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    width: 100%;
+    overflow-x: hidden;
+}
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.navbar-wrap{
+    padding-top:5px;
+    background-color: #00204a;
+    width: 100%;
+    height: 80px;
+    
+}
+.navbar{
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end; 
+  align-items: center;
+  margin: 0px; 
+}
+#logo{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size:30px ;
+    margin-right: auto;
+}
+.nav-item{
+    padding:20px;
+    font-size: 20px;
+}
+a{
+ text-decoration: none;   
+ color:#ffffff;
+ 
+}
+
+.about{
+    margin:50px;
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    justify-items: center;
+    justify-content: center;
+}
+.about-box > figure{
+    width: auto;
+    height: 300px;
+    text-align: center;
+    font-style: italic;
+}
+.about-img{
+    width: auto;
+    height: 300px;
+}
+.about-text{
+    padding: 10px;
+    font-size: 20px;
+}
+.summary{
+    display: grid;
+    
+    justify-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 50px;
+    background-color:#50d890;
+}
+.contact-section{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size:30px ;
+}
+.form-title{
+    text-align: center;
+}
+.fbox{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    gap:5%;
+    justify-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.mbox{
+  display: grid; 
+  grid-template-columns: auto;
+  grid-column:1;
+  justify-items: center;
+  font-size: 20px;
+  margin-top:10px;
+}
+.form-field{
+margin-top: 30px;
+margin-bottom: 10px;
+}
+.input-text{
+    border-top:0px;
+    border-right: 0px;
+    border-bottom: 1px solid #50d890;
+    border-left: 0px;
+}
+.input-text :focus{
+    background: none;
+    border-top:0px;
+    border-right: 0px;
+    border-bottom: 2px solid #50d890;
+    border-left: 0px;
+}
+.submit-btn{
+    margin: 10px auto;
+    padding: 18px;
+    border: 1px solid #50d890;
+    border-radius: 0 12px 0 12px ;
+    background-color: #50d890;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 450px) {
+    .navbar-wrap{
+        height: 100px;
+    }
+    .navbar{
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      
+    }
+    
+    #logo {
+      flex-basis: 100%;
+      text-align: center;
+      margin-left: 0;
+    }
+  
+  }
